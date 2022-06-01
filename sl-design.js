@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SL Design
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1 - 29th May 2022
+// @version      1.0.1
 // @description  Make Splinterlands looking nice!
 // @author       @louis88, @schneegecko - Legendary Dragons Splinterlands Guild.
 // @match        https://splinterlands.com/*
@@ -33,6 +33,9 @@ style.innerHTML = `
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
 }
+
+
+
 
 .team__monsters {
     border-radius: 4px;
@@ -92,19 +95,24 @@ style.innerHTML = `
 }
 
 #battle_history_page .history-header .info {
-    padding: 40px;
     background: rgb(101 101 101 / 25%);
     box-shadow: 0 8px 32px 0 rgb(0 0 0 / 25%);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 12px;
     border: 1px solid rgb(255 255 255 / 6%);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .battle-log-entry__time {
     margin-top: 4px;
     color: #72afb9;
     text-align: right;
+}
+
+.team__monster__content--gold {
+    border-color: #ffcf2e !important;
 }
 
 /* BATTLE PAGE*/
